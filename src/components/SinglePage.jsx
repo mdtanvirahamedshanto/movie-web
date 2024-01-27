@@ -1,20 +1,19 @@
 import { NavLink, useParams } from "react-router-dom";
-// import useFetch from "./useFetch";
+import useFetch from "../utils/useFetch";
 
 const SinglePage = () => {
   const { id } = useParams();
   console.log(id);
-  const movie = "f";
   // eslint-disable-next-line no-unused-vars
-  // const { isLoading, movie, isError } = useFetch(`&i=${id}`);
+  const { isLoading, movie, isError } = useFetch(`&i=${id}`);
 
-  // if (isLoading) {
-  return (
-    <section className="movie-section ">
-      <div className="loading">Loading....</div>;
-    </section>
-  );
-  // }
+  if (isLoading) {
+    return (
+      <section className="movie-section ">
+        <div className="loading">Loading....</div>;
+      </section>
+    );
+  }
 
   return (
     <section className="movie-section">

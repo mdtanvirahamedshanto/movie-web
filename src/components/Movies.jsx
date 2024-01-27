@@ -6,7 +6,7 @@ const imgUrl = "https://via.placeholder.com/200/200";
 
 const Movies = () => {
   const { movie } = useContext(AppContext);
-  console.log(movie);
+  // console.log(movie);
 
   return (
     <>
