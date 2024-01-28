@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 
 // setting the api link
 export const API_URL = `https://www.omdbapi.com/?&apikey=d219d256`;
-/* plz subsribe to thapa technical channel 
-          https://www.youtube.com/thapatechnical
-         */
 
 const useFetch = (apiParams) => {
   const [isLoading, setIsLoading] = useState(true);
